@@ -25,33 +25,28 @@ const generateMetadata = async (
   };
 };
 
-export const PostPage = async ({ params }: { params: { slug: string } }) => {
-  try {
-    const {
-      props: { frontMatter, mdxSource },
-    } = await getPostProps(params);
+const PostPage = async ({ params }: { params: { slug: string } }) => {
+  const {
+    props: { frontMatter, mdxSource },
+  } = await getPostProps(params);
 
-    const options = {
-      mdxOptions: {
-        remarkPlugins: [],
-        rehypePlugins: [rehypeHighlight],
-      },
-    };
+  const options = {
+    mdxOptions: {
+      remarkPlugins: [],
+      rehypePlugins: [rehypeHighlight],
+    },
+  };
 
-    return (
-      <>
-        <div className="2xs:mx-5 2xs:max-w-prose prose mt-4 text-lg">
-          <h1 className="2xs:text-2xl 2xs:pt-5 pt-5">{frontMatter.title}</h1>
-          <div>
-            <MDXRemote source={mdxSource} options={options} />
-          </div>
+  return (
+    <>
+      <div className="2xs:mx-5 2xs:max-w-prose prose mt-4 text-lg">
+        <h1 className="2xs:text-2xl 2xs:pt-5 pt-5">{frontMatter.title}</h1>
+        <div>
+          <MDXRemote source={mdxSource} options={options} />
         </div>
-      </>
-    );
-  } catch (error) {
-    console.error('Error in PostPage:', error);
-    return <div>Error loading post</div>;
-  }
+      </div>
+    </>
+  );
 };
 
 const getPostProps = async ({ slug }: { slug: string }) => {

@@ -27,7 +27,7 @@ export default async function Writing() {
   );
 }
 
-export const Post = ({ post }: any) => {
+const Post = ({ post }: any) => {
   return (
     <div className="pt-5">
       <Link href={`/writing/${post.slug}`}>
@@ -38,7 +38,7 @@ export const Post = ({ post }: any) => {
   );
 };
 
-export const getPostsData = async () => {
+const getPostsData = async () => {
   const files = fs.readdirSync(path.join(process.cwd(), 'src/app/_posts'));
   const posts = files.map((filename) => {
     const markdownWithMeta = fs.readFileSync(
