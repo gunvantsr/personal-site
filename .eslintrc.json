@@ -1,8 +1,7 @@
 {
-  "extends": ["next/core-web-vitals", "@next/eslint-plugin-next"],
   "plugins": ["@stylistic/js"],
   "rules": {
     "@stylistic/js/indent": ["error", 2]
-  }
-
+  },
+  "extends": ["next/core-web-vitals", "@next/eslint-plugin-next"]
 }

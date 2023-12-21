@@ -14,21 +14,19 @@ import {
   RedditShareButton,
   EmailShareButton,
 } from 'next-share';
-import { title } from 'process';
 
-export async function generateMetadata(
+const generateMetadata = async (
   params: { params: { slug: string } },
   parent: ResolvingMetadata
-) {
+) => {
   const title = params.params.slug.split('-').join(' ');
   return {
     title: title + '- gunvant.in',
   };
-}
+};
 
 export const PostPage = async ({ params }: { params: { slug: string } }) => {
   try {
-    // const { paths } = await getPostPaths();
     const {
       props: { frontMatter, mdxSource },
     } = await getPostProps(params);
@@ -55,36 +53,8 @@ export const PostPage = async ({ params }: { params: { slug: string } }) => {
     return <div>Error loading post</div>;
   }
 };
-// export const getPostPaths = async () => {
-//   const files = fs.readdirSync(path.join(process.cwd(), 'src/app/_posts'));
 
-//   const paths = files.map((filename) => ({
-//     params: {
-//       slug: filename.replace('.mdx', ''),
-//     },
-//   }));
-
-//   return {
-//     paths,
-//     fallback: false,
-//   };
-// };
-
-// export async function generateStaticParams({
-//   params,
-// }: {
-//   params: { slug: string };
-// }) {
-//   const files = fs.readdirSync(path.join(process.cwd(), 'src/app/_posts'));
-
-//   const paths = files.map((filename) => ({
-//     params: {
-//       slug: filename.replace('.mdx', ''),
-//     },
-//   }));
-// }
-
-export const getPostProps = async ({ slug }: { slug: string }) => {
+const getPostProps = async ({ slug }: { slug: string }) => {
   const markdownWithMeta = fs.readFileSync(
     path.join(process.cwd(), 'src/app/_posts', slug + '.mdx'),
     'utf-8'
