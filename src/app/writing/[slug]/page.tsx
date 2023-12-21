@@ -15,7 +15,7 @@ import {
   EmailShareButton,
 } from 'next-share';
 
-const generateMetadata = async (
+export const generateMetadata = async (
   params: { params: { slug: string } },
   parent: ResolvingMetadata
 ) => {

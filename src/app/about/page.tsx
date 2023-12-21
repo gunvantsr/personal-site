@@ -37,7 +37,7 @@ export default function About() {
           wipro
         </Link>{' '}
         , where i worked on virtualization and application packaging systems. i
-        learnt about working infrastructures and software delivery at entripse
+        learnt about working infrastructures and software delivery at enterprise
         scale. then i joined{' '}
         <Link
           href="https://emertech.io"
@@ -48,7 +48,7 @@ export default function About() {
         </Link>{' '}
         an early-stage startup, as first full-time engineer. we built blockchain
         based agri-supply chain platform for small landing and marginal farmer
-        groups. during my tenor with team emertech, i mostly managed cloud
+        groups. during my time with team emertech, i mostly managed cloud
         infrastructure, built backend systems, wandered around grapes and cotton
         fields to test out our software.
       </p>
