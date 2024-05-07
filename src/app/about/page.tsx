@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <main className="flex flex-col justify-around pt-10 text-lg 2xs:px-3 2xs:pt-5">
-      <h1 className="pt-5 text-3xl">a bit about myself 👋 </h1>
+      <h1 className="pt-5 text-2xl">a bit about myself 👋 </h1>
       <p className="pt-5 ">
         i was born and raised in a tiny village in the mahrashtra region, where
         i came across this magic box called computers in my high school. i spent
