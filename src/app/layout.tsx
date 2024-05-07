@@ -1,11 +1,17 @@
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import { Poppins, Inter } from 'next/font/google';
 import './tailwind.css';
+
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Head from 'next/head';
 
 const poppins = Poppins({ weight: '400', subsets: ['latin'] });
+
+const inter = Inter({
+  weight: '400',
+  subsets: ['greek'],
+});
 
 export const metadata: Metadata = {
   title: 'Gunvant Sarpate',
@@ -26,7 +32,7 @@ export default function RootLayout({
         ></link>
       </Head>
 
-      <body className={`${poppins.className} bg-body-bg`}>
+      <body className={`${inter.className} bg-body-bg`}>
         <div className="flex flex-col h-screen container mx-auto max-w-4xl  bg-main-bg">
           <Navbar />
           {children}

@@ -3,10 +3,10 @@ import Link from 'next/link';
 export default function Navbar() {
   return (
     <div className="flex 2xs:flex-col 2xs:justify-around sm:flex-row justify-between pt-5">
-      <div className="2xs:text-4xl 2xs:text-center sm:text-3xl ">
+      <div className="2xs:text-4xl 2xs:text-center sm:text-xl ">
         <Link href="/">Gunvant 🌱</Link>
       </div>
-      <ul className="flex flex-row 2xs:pt-5 2xs:justify-evenly  text-xl">
+      <ul className="flex flex-row 2xs:pt-5 2xs:justify-evenly text-lg">
         <Link href="/">
           <li className="block px-5 hover:underline">home</li>
         </Link>

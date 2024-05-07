@@ -16,8 +16,8 @@ export default function Home() {
             className="rounded-full sm:max-w-xs 2xs:max-w-[250px] 2xs:mx-h-[250px]"
           />
         </div>
-        <div className="2xs:px-3 2xs:text-xl prose-xl">
-          <p className="2xs:text-2xl 2xs:text-center 2xs:mt-4 sm:text-left sm:text-2xl sm:pt-10 ">
+        <div className="2xs:px-3 2xs:text-xl prose-lg">
+          <p className="2xs:text-2xl 2xs:text-center 2xs:mt-4 sm:text-left sm:text-2xl sm:pt-10">
             hello there,
           </p>
           <p>
@@ -49,35 +49,6 @@ export default function Home() {
           </p>
         </div>
       </main>
-      {/* <div className="2xs:px-3 2xs:text-xl prose-lg pt-5">
-        <h1 className="text-2xl 2xs:pt-3">a bit about myself </h1>
-        <p></p>
-        <p className="">
-          i was born and raised in a tiny village in mahrashtra region, where i
-          came across this magic box called computers in my highschool. i spent
-          my teenage doing several odd jobs. sometimes in local forest
-          department and at construction sites. then i finally got a job at a
-          internet cafe, which required me to travel few kms daily, but provided
-          me something that i was courisou about: an unrestricted access to pc
-          and internet! Its the time, when taught myself building webpages using
-          html, css and dreamweaver cs6. it felt nice, to build webpage layouts
-          using html tables!
-          <p>
-            {' '}
-            <Link
-              href="/about"
-              className="font-bold text-link-ext underline hover:underline"
-            >
-              {' '}
-              continue reading on about page{' '}
-            </Link>
-          </p>
-        </p>
-      </div>
-      <div>
-        <h1 className="pt-5 text-2xl 2xs:px-3">sometimes i write here </h1>
-        <PostList />
-      </div> */}
     </>
   );
 }
