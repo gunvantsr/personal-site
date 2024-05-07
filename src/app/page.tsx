@@ -16,17 +16,14 @@ export default function Home() {
             className="rounded-full sm:max-w-xs 2xs:max-w-[250px] 2xs:mx-h-[250px]"
           />
         </div>
-        <div className="2xs:px-3 2xs:text-xl prose-lg">
+        <div className="2xs:px-3 2xs:text-xl text-lg prose-lg pr-6">
           <p className="2xs:text-2xl 2xs:text-center 2xs:mt-4 sm:text-left sm:text-2xl sm:pt-10">
             hello there,
           </p>
           <p>
             i am gunvant sarpate, a software developer, tinkerer and lifelong
             learner. i like building softwares, scaling infra and all things
-            about cloud.
-          </p>
-          <p>
-            currently, i'm working as senior software engineer at{' '}
+            about cloud. currently, i'm working as senior software engineer at{' '}
             <Link
               href="https://bambu.co"
               className="font-bold text-link-ext hover:underline"
@@ -36,6 +33,7 @@ export default function Home() {
             </Link>{' '}
             building wealth tech products!
           </p>
+
           <p className="">
             i'm always open for new challenges and opportunities, we can connect
             on{' '}
