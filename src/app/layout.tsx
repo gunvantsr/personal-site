@@ -30,6 +30,7 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css"
         ></link>
+        <link rel="icon" href="/images/favicon.ico" sizes="any"></link>
       </Head>
 
       <body className={`${inter.className} bg-body-bg`}>
