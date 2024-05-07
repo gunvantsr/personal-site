@@ -40,7 +40,9 @@ const PostPage = async ({ params }: { params: { slug: string } }) => {
   return (
     <>
       <div className="2xs:mx-5 2xs:max-w-prose prose mt-4 text-lg">
-        <h1 className="2xs:text-2xl 2xs:pt-5 pt-5">{frontMatter.title}</h1>
+        <h1 className="2xs:text-2xl 2xs:pt-5 pt-5 text-2xl">
+          {frontMatter.title}
+        </h1>
         <div>
           <MDXRemote source={mdxSource} options={options} />
         </div>
