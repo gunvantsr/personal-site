@@ -15,7 +15,7 @@ export default async function Writing() {
 
   return (
     <div className="2xs:px-5 pt-10 text-lg 2xs:pt-5">
-      <p className="pt-5 text-2xl">
+      <p className="pt-5 text-xl">
         some random thoughts, opinions, rants around tech and life!
       </p>
       {posts.map((post, index) => (
@@ -31,9 +31,9 @@ const Post = ({ post }: any) => {
   return (
     <div className="pt-5">
       <Link href={`/writing/${post.slug}`}>
-        <h1 className="hover:underline text-xl">{post.frontMatter.title}</h1>
-        <p> {post.frontMatter.date} </p>
+        <h1 className="hover:underline text-lg">{post.frontMatter.title}</h1>
       </Link>
+      <p className="text-sm"> {post.frontMatter.date} </p>
     </div>
   );
 };
